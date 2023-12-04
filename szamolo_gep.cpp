@@ -145,8 +145,6 @@ char option_check(char option) {
 int szam_check() {
     int szam;
     std::cin >> szam;
-    int szam;
-    std::cin >> szam;
     while (1) {
             if(std::cin.good()){
                 break;
