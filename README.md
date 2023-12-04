@@ -4,3 +4,6 @@ Egyszerű számológép, mellyel lehet összeadni, kivonni, szorozni, osztani, h
 + Program szétbontása különböző függvényekbe.
 + Felkészülés rossz inputra, és annak kiíratása.
 + Kommentek haszálata
+## Technológiák:
+- C++
+- VS Code
