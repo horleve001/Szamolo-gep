@@ -1,6 +1,5 @@
 #include <iostream>
 #include <math.h>
-#include <iomanip>
 
 
 void AddTwoNumber(int szam1, int szam2);
@@ -146,11 +145,18 @@ char option_check(char option) {
 int szam_check() {
     int szam;
     std::cin >> szam;
-    while (std::cin.fail()) {
-        std::cout << "nem jo szamot irtal be, probald ujra" << std::endl;
-        std::cin.clear();
-        std::cin.ignore(256, '\n');
-        std::cin >> szam;
+    int szam;
+    std::cin >> szam;
+    while (1) {
+            if(std::cin.good()){
+                break;
+            }
+            else if(std::cin.fail()){
+                std::cout << "nem jo szamot irtal be, probald ujra" << std::endl;
+                std::cin.clear();
+                std::cin.ignore(256, '\n');
+                std::cin >> szam;
+            }
     }
 
 
